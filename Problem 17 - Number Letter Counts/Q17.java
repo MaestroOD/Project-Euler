@@ -14,7 +14,7 @@ public class Q17 {
 
         int letterSum = 0;
 
-        // i realize this is dogshit but i'm gonna split it into 0-9, 10-99, 100-1000
+        // i realize this is dogshit but i'm gonna split it into 0-9, 10-19, 20-99, 100-1000
 
         for (int i = 1; i<=9; i++) {
             letterSum = letterSum + singleDigits[i].length();
@@ -47,11 +47,9 @@ public class Q17 {
             
         }
 
-        letterSum = letterSum + "one thousand".length()-1;
+        letterSum = letterSum + "one thousand".length()-1;  // forgot this hehe
 
         System.out.println(letterSum);
 
     }
-
-
 }
